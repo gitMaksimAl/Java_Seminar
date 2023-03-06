@@ -13,7 +13,7 @@ import java.util.Arrays;
  */ 
 
 public class Homework {
-       public static void main(String[] args) {
+    public static void main(String[] args) {
         System.out.println(isSumBetween10And20(5, 15)); // true
         System.out.println(isSumBetween10And20(7, 15)); // false
 
@@ -25,7 +25,24 @@ public class Homework {
         int[][] array = new int[4][4]; // [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, x], [0, 0, 0, 1]]
         int x = array[2][3]; 
 
+        // 1. Задать целочисленный массив, состоящий из элементов 0 и 1.
+        // С помощью цикла и условия заменить 0 на 1, 1 на 0
+        int[] array2 =  {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
+        zeroInvertOne(array2);
+        System.out.printf("Task1:\n%s\n", Arrays.toString(array2));
 
+        // 2. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ]
+        // пройти по нему циклом, и числа меньшие 6 умножить на 2
+        int[] array3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        riseNeSix(array3);
+        System.out.printf("Task2:\n%s\n", Arrays.toString(array3));
+
+        // 3. Создать квадратный двумерный целочисленный массив (количество
+        // строк и столбцов одинаковое)
+        // и с помощью цикла(-ов) заполнить его диагональные элементы единицами 
+        int[][] array4 = squareArray(5);
+        System.out.println("Task3:");
+        for (int[] item: array4) System.out.println(Arrays.toString(item));
     }
 
     /**
@@ -59,4 +76,36 @@ public class Homework {
         return newArr;
     }
 
+    /*
+    * 1. Задать целочисленный массив, состоящий из элементов 0 и 1.
+    * Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ]. С помощью цикла и условия заменить 0 на 1, 1 на 0;
+    */
+    private static void zeroInvertOne(int[] arr) {
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] == 0) arr[i]++;
+                else arr[i]--;
+            }
+    }
+
+    /*
+    *2. Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
+    */
+    private static void riseNeSix(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] < 6) arr[i] *= 2;
+        }
+    }
+
+    /*
+    * 3. Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
+    * и с помощью цикла(-ов) заполнить его диагональные элементы единицами
+    */
+    private static int[][] squareArray(int len) {
+        int[][] square = new int[len][len];
+        for (int i = 0; i < len; i++) {
+            for (int j = 0; j < len; j++)
+                if (i == j || j == (len - 1) - i) square[i][j] = 1;
+        }
+        return square;
+    }
 }
