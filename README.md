@@ -5,3 +5,6 @@
 
 ## Lesson 1
 Work with, matrix, massive(count items, transfer items), use builtins libs for input-output, type casting. Find __common prefix__.
+
+## Lesson 2
+Work with strings, files, compress file. Use standart java API.
