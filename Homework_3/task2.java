@@ -1,8 +1,6 @@
 package Homework_3;
 
-import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -34,21 +32,8 @@ public class task2 {
                 Integer.parseInt(iterator.next());
                 iterator.remove();
             } catch (NumberFormatException notnum) {
-                consoleLog(notnum.getMessage());
+                continue;
             }
         }
-    }
-
-    private static void consoleLog(String message) {
-        char esc = '\033';
-        char sqr = '[';
-
-        System.err.printf("%s %c%c31mWARN%c%c0m %s\n",
-            Date.from(Instant.now()),
-            esc,
-            sqr,
-            esc,
-            sqr,
-            message);
     }
 }
