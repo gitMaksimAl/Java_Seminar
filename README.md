@@ -8,3 +8,7 @@ Work with, matrix, massive(count items, transfer items), use builtins libs for i
 
 ## Lesson 2
 Work with strings, files, compress file. Use standart java API.
+
+## Lesson 3
+Work with __list__, find duplicate items in list. Search items in cycle and by
+__iterator__.
