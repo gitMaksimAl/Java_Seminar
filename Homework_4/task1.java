@@ -19,7 +19,7 @@ public class task1 {
         System.out.printf("Eneter line format: <string%sint>\n", SEP);
         String command = consoleReader.nextLine();
         while (!command.equalsIgnoreCase("exit")) {
-            String[] data = parser(command);
+            String[] data = parse(command);
             switch (data[0]) {
                 case "print":
                     if (!pullText(LIST, data)) System.out.println("Try again.");
@@ -36,7 +36,7 @@ public class task1 {
     
     }
 
-    private static String[] parser(String input) {
+    private static String[] parse(String input) {
         String[] data = input.split(SEP);
         if (data.length < 2 || notInt(data[1])) {
             System.err.println("Wrong input format.");
