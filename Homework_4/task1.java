@@ -60,7 +60,6 @@ public class task1 {
             lst.set(index, text[0]);
         } catch (IndexOutOfBoundsException out) {
             while (lst.size() <= index) lst.add(null);
-            System.out.printf("ARRAY SIZE RISED TO %d.\n", lst.size());
             lst.set(index, text[0]);
         }
     }

@@ -14,4 +14,4 @@ Work with __list__, find duplicate items in list. Search items in cycle and by
 __iterator__.
 
 ## Lesson 4
-Work with linked list, dynamic array. Test speed read, write.
+Work with linked list, __dynamic array__. Test speed read, write.
