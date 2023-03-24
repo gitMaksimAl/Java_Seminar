@@ -4,7 +4,8 @@
 ![java logo](https://www.logo.wine/a/logo/Java_(programming_language)/Java_(programming_language)-Logo.wine.svg)
 
 ## Lesson 1
-Work with, matrix, massive(count items, transfer items), use builtins libs for input-output, type casting. Find __common prefix__.
+Work with, matrix, massive(count items, transfer items), use builtins libs for
+input-output, type casting. Find __common prefix__.
 
 ## Lesson 2
 Work with strings, files, compress file. Use standart java API.
@@ -15,3 +16,7 @@ __iterator__.
 
 ## Lesson 4
 Work with linked list, __dynamic array__. Test speed read, write.
+
+## Lesoon 5
+Work with __map__ collection.Check __isomorphic string__, __parentheses sequence__.
+Make __frequency dictionary__ from words in text.
