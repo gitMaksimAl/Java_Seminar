@@ -8,6 +8,8 @@ public class DriveCat {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Murzik", 5);
         Cat cat2 = new Cat("Murzik", 5);
+        Cat cat3 = new Cat("Barsik", 7);
+        Cat cat4 = new Cat("Filimon", 3);
 
         System.out.println(cat1.getName());
         System.out.println(cat1.getAge());
@@ -28,6 +30,8 @@ public class DriveCat {
         Set<Cat> treeSet = new TreeSet<>(catComparator);
         treeSet.add(cat1);
         treeSet.add(cat2);
+        treeSet.add(cat3);
+        treeSet.add(cat4);
         System.out.println(treeSet.toString());
     }
 }
