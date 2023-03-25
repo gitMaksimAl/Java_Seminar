@@ -1,6 +1,7 @@
 package Lesson_6;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.Comparator;
 import java.util.HashSet;
 
 public class DriveCat {
@@ -22,6 +23,15 @@ public class DriveCat {
         System.out.println(cats.toString());
 
         // Tree Set sort objects. Need override compareTo method in class.
+        // If have not source code need implement Comparator:
+        Comparator<Cat> catComparator = new Comparator<Cat>() {
+            @Override
+            public int compare (Cat c1, Cat c2) {
+                if (c1.getAge() < c2.getAge()) return -1;
+                else if (c1.getAge() > c2.getAge()) return 1;
+                return 0;
+            }
+        };
         Set<Cat> treeSet = new TreeSet<>();
         treeSet.add(cat1);
         treeSet.add(cat2);
