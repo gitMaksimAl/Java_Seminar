@@ -32,7 +32,7 @@ public class DriveCat {
                 return 0;
             }
         };
-        Set<Cat> treeSet = new TreeSet<>();
+        Set<Cat> treeSet = new TreeSet<>(catComparator);
         treeSet.add(cat1);
         treeSet.add(cat2);
         System.out.println(treeSet.toString());
