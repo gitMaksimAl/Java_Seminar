@@ -24,13 +24,10 @@ public class DriveCat {
 
         // Tree Set sort objects. Need override compareTo method in class.
         // If have not source code need implement Comparator:
-        Comparator<Cat> catComparator = new Comparator<Cat>() {
-            @Override
-            public int compare (Cat c1, Cat c2) {
-                if (c1.getAge() < c2.getAge()) return -1;
-                else if (c1.getAge() > c2.getAge()) return 1;
-                return 0;
-            }
+        Comparator<Cat> catComparator = (c1, c2) -> {
+            if (c1.getAge() < c2.getAge()) return -1;
+            else if (c1.getAge() > c2.getAge()) return 1;
+            return 0;
         };
         Set<Cat> treeSet = new TreeSet<>(catComparator);
         treeSet.add(cat1);
