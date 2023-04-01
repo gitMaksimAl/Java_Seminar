@@ -20,3 +20,6 @@ Work with linked list, __dynamic array__. Test speed read, write.
 ## Lesoon 5
 Work with __map__ collection.Check __isomorphic string__, __parentheses sequence__.
 Make __frequency dictionary__ from words in text.
+
+## Lesson 6
+OOP Begin. Start of OOP. Initailization objects, getters, setters, hash, equals.
